@@ -8,7 +8,7 @@ provider "azurerm" {
 
 terraform {
   backend "azurerm" {
-    # resource_group_name  = "stateful-rg"
+    resource_group_name  = "stateful-rg"
     storage_account_name = "aearles00"
     container_name       = "terraform"
     # use_azuread_auth     = true
