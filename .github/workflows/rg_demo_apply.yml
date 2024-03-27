@@ -1,4 +1,4 @@
-name: 'Azure RG Terraform Workflow'
+name: 'Azure RG Terraform APPLY Workflow'
  
 on:
   # push:
