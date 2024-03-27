@@ -1,4 +1,4 @@
-name: 'Azure RG Terraform Plan Workflow'
+name: 'Azure RG Terraform Workflow'
  
 on:
   # push:
@@ -94,5 +94,5 @@ jobs:
 
     - name: Terraform Apply
       id: apply
-      run: terraform apply -no-color
+      run: terraform apply -no-color -auto-approve
       continue-on-error: true
