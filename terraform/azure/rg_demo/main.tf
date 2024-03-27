@@ -42,16 +42,16 @@ provider "azurerm" {
 
 locals {
   tags = {
-    BusinessUnit = "Sandbox"
-    BusinessOwner = "Aaron"
+    BusinessUnit    = "Sandbox"
+    BusinessOwner   = "Aaron"
     ApplicationName = "rg_demo"
-    Environment = "Sandbox"
-    Compliance = "N"
+    Environment     = "Sandbox"
+    Compliance      = "N"
   }
 }
 
 resource "azurerm_resource_group" "rg_demo-rg" {
   name     = "rg_demo-rg"
   location = var.location
-  tags = local.tags
+  tags     = local.tags
 }
