@@ -1,4 +1,4 @@
-name: 'Azure RG Terraform DESTROY'
+name: 'Azure RG_Demo Terraform DESTROY -- LAB'
  
 on:
   # push:

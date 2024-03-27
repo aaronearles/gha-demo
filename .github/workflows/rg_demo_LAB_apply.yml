@@ -1,4 +1,4 @@
-name: 'Azure RG Terraform APPLY'
+name: 'Azure RG_Demo Terraform APPLY -- LAB'
  
 on:
   # push:
