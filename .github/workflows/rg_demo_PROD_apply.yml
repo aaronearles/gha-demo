@@ -1,4 +1,4 @@
-name: 'Azure RG_Demo Terraform APPLY -- STAGE'
+name: 'Azure RG_Demo Terraform APPLY -- PROD'
  
 on:
   # push:
