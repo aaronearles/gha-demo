@@ -26,7 +26,7 @@ jobs:
       ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
     runs-on: ubuntu-latest
     # runs-on: self-hosted
-    # environment: lab
+    environment: lab
  
     defaults:
       run:
