@@ -1,4 +1,4 @@
-name: 'Azure RG_Demo Terraform DESTROY -- STAGE'
+name: 'Azure RG_Demo Terraform APPLY -- STAGE'
  
 on:
   # push:
@@ -26,7 +26,7 @@ jobs:
       ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
     runs-on: ubuntu-latest
     # runs-on: self-hosted
-    environment: demo-stage
+    environment: demo-prod
  
     defaults:
       run:
@@ -92,7 +92,7 @@ jobs:
     #         body: output
     #       })
 
-    - name: Terraform Destroy
-      id: destroy
-      run: terraform destroy -no-color -auto-approve
+    - name: Terraform Apply
+      id: apply
+      run: terraform apply -no-color -auto-approve
       continue-on-error: true
